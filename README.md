@@ -1,59 +1,20 @@
-# SimuladorInversiones
+# Crypto-Sim: Inversiones en Tiempo Real
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.6.
+## Proyecto de Desarrollo Angular con Enfoque en Calidad y Seguridad Bancaria.
 
-## Development server
+Este proyecto es un simulador financiero que consume datos en tiempo real de criptomonedas. Ha sido desarrollado bajo estándares de arquitectura modular, aplicando patrones utilizados en aplicaciones bancarias de alto rendimiento.
 
-To start a local development server, run:
+ ### 🚀 Características Técnicas Destacadas
 
-```bash
-ng serve
-```
+ - Arquitectura Modular: Separación estricta de responsabilidades mediante Core, Shared y módulos de funcionalidades (Feature Modules) como Public y Private.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+ - Seguridad y Navegación: Implementación de Guards para la protección de rutas privadas y control de acceso basado en el estado del usuario.
 
-## Code scaffolding
+ - Intercepción Global: Uso de HTTP Interceptors para la inyección automática de Headers de auditoría (API Keys) y manejo centralizado de errores HTTP.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+ - UI/UX Reactiva: Interfaz construida con Angular Material, utilizando formularios reactivos con validaciones avanzadas y Pipes personalizados para la transformación de datos financieros en tiempo real.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🛠️ Enfoque en Calidad (QA-Mindset)
+Como desarrollador con formación en QA, el proyecto incluye:
+Manejo de estados de carga y errores de red capturados por interceptores.
+Limpieza de recursos mediante el ciclo de vida de componentes para evitar fugas de memoria.
