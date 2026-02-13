@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
   imports:[
     PublicRoutingModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
 
   ],
 })
