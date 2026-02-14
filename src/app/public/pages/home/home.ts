@@ -4,12 +4,11 @@ import { BinanceService } from '@app/core/services/binance/binance.service';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MainNav } from '../components/main-nav/main-nav';
-import { Observable } from 'rxjs';
-import { CommonModule,AsyncPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [MatButtonModule, MatCardModule, MainNav, CommonModule, AsyncPipe],
+  imports: [MatButtonModule, MatCardModule, MainNav, CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   standalone: true
