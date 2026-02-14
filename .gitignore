@@ -1,7 +1,6 @@
 # --- Entorno y Secretos ---
-.env
-.env.*
-src/environments/environment.custom.ts
+src/environments/environment.dev.ts
+src/environments/environment.ts
 
 # --- Angular Complementos ---
 /.angular

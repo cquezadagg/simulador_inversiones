@@ -13,16 +13,13 @@
 
   <section class="home-features">
     <h2>Mercado en vivo</h2>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>S&P 500</mat-card-title>
-        <!-- TODO: Validar si dejamos el valor como subtitle o lo colocamos entre el header y el content -->
-        <mat-card-subtitle>$500.000</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>^ 200000</p>
-        <!-- TODO: Colocar los valores reales sacados de la API  -->
-      </mat-card-content>
-    </mat-card>
+    @if (btcPrice(); as btc){
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Bitcoin (BTC)</mat-card-title>
+          <mat-card-subtitle>{{ btc.c | currency:'USD' }}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+      }
   </section>
 </main>
