@@ -13,11 +13,11 @@
 
   <section class="home-features">
     <h2>Mercado en vivo</h2>
-    @if (btcPrice(); as btc){
+    @for (market of topCoins(); track market.symbol){
       <mat-card>
         <mat-card-header>
-          <mat-card-title>Bitcoin (BTC)</mat-card-title>
-          <mat-card-subtitle>{{ btc.c | currency:'USD' }}</mat-card-subtitle>
+          <mat-card-title>{{ market.symbol }}</mat-card-title>
+          <mat-card-subtitle>Volumen: {{ market.volume | number }}</mat-card-subtitle>
         </mat-card-header>
       </mat-card>
       }

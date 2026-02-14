@@ -17,5 +17,5 @@ export class Home {
   private binanceService = inject(BinanceService);
 
   //INFO: se usan signals
-  btcPrice = toSignal(this.binanceService.connectionLivePricing('btcusdt'), {initialValue: null});
+  topCoins = toSignal(this.binanceService.connectionLivePricing(), {initialValue: null});
 }
